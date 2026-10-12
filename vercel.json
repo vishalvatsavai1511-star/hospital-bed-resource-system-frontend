@@ -1,5 +1,12 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/api/:match*",
+      "destination": "https://hospital-bed-resource-system-backend.onrender.com/api/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
